@@ -1,0 +1,9 @@
+<div #messagesContainer appScrollHandler (scrollToTop)="loadMoreMessages()" class="messenger">
+    <app-loading-indicator *ngIf="isAllMessages"></app-loading-indicator>
+    <app-message *ngFor="let message of messages" [message]="message"></app-message>
+    <ng-container *ngIf="!messages.length">
+        <mat-card class="messenger__noMessages">No Messages</mat-card>
+    </ng-container>
+</div>
+<mat-divider></mat-divider>
+<app-message-form class="messengerForm"></app-message-form>

@@ -1,0 +1,7 @@
+<form class="messageForm" autocomplete="off" (submit)="sendMessage()">
+    <mat-form-field class="messageForm__input">
+        <input [(ngModel)]="messageText" [ngModelOptions]="{standalone: true}" matInput placeholder="Your message">
+    </mat-form-field>
+
+    <button class="messageForm__button" type="submit" mat-button>Send</button>
+</form>

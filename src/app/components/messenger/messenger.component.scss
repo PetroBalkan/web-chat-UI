@@ -1,0 +1,34 @@
+$messengerHeight: 100vh;
+$inputFormHeight: 100px;
+
+:host {
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .messenger {
+        overflow-y: auto;
+        height: inherit;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        &__viewMore {
+            display: block;
+            margin: 10px auto;
+            min-height: 36px;
+        }
+
+        &__noMessages {
+            text-align: center;
+            margin-top: auto;
+        }
+    }
+
+
+    .messengerForm, mat-divider {
+        display: block;
+        margin: 0 10px;
+    }
+}

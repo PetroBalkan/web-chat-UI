@@ -1,0 +1,7 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <input [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" matInput placeholder="Your nickname">
+    </mat-form-field>
+
+    <button routerLink="/messenger" [queryParams]="{userName: userName}" mat-button>Start</button>
+</form>
